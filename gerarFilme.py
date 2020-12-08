@@ -20,5 +20,5 @@ def printTree(self, depth = 0):
     if self != None:
         printTree(self._left, depth + 1)
         print(' ' * 4 * depth + '->', self._filme._idFilme)
-        # print(' ' * 4 * depth + '->', self._filme.get_nome())
+        # print(' ' * 8 * depth + '->', self._filme.get_nome())
         printTree(self._right, depth + 1)
