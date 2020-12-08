@@ -99,11 +99,11 @@ class Node:
     def do_balance(self, root, key):
         balance = root._balance
         
-        # Esquerda - Esquerda
+        # Esquerda
         if balance > 1 and key < root.get_left().get_filme().get_nome():
             return self.right_rotation(root)
-
-        # Direita - Direita
+        
+        # Direita
         if balance < -1 and key > root.get_right().get_filme().get_nome():
             return self.left_rotation(root)
                 
