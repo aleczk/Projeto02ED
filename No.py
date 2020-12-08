@@ -105,9 +105,8 @@ class Node:
 
         # Direita - Direita
         if balance < -1 and key > root.get_right().get_filme().get_nome():
-            y = self.left_rotation(root)
-            return y
-        
+            return self.left_rotation(root)
+                
         # Rotação Dupla Esquerda - Direta
         if balance > 1 and key > root.get_left().get_filme().get_nome():
             root.set_left(root.left_rotation(root.get_left()))
